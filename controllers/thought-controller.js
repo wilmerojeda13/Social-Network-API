@@ -1,5 +1,4 @@
 const {User, Thought} = require('../models');
-const { addFriend } = require('./user-controller');
 
 const thoughtController = {
     //get all thought
@@ -15,7 +14,7 @@ const thoughtController = {
 
     // get one id
     getThoughById({ params}, res) {
-        thought.findOne({_id: params.id})
+        Thought.findOne({_id: params.id})
         .then((dbThoughtData) => {
             if (!dbThoughtData) {
                 res.status(404).json({ message: '⛔Not thought with this ID'})
