@@ -1,4 +1,5 @@
-const { User } = require ('../models');
+//user-controllers
+const { User } = require('../models');
 
 const userController = {
     //get all Users
@@ -13,7 +14,7 @@ const userController = {
         .then((dbUserData) => res.json(dbUserData))
         .catch((err) => {
             console.log(err);
-            res.status(400).json(err)
+            res.status(400).json(err);
         });
     },
 
@@ -115,4 +116,4 @@ const userController = {
 
 };
 
-module.exports = userController
+module.exports = userController;

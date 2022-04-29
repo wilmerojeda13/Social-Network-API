@@ -19,7 +19,7 @@ router
 // Set up GET one, PUT, and DELETE at /:id
 router
   .route('/:id')
-  .get(getThoughtById)
+  .get( getThoughtById)
   .put(updateThought)
   .delete(deleteThought);
 
@@ -27,7 +27,6 @@ router
 router
   .route('/:thoughtId/reactions')
   .post(addReaction)
-  .delete(deleteReaction);
 
 
 module.exports = router;
