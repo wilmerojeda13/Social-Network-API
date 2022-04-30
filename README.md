@@ -34,7 +34,7 @@ You can test the project by cloning the repository and start the project by inst
 
 
 ## Screenshot:
-![alt text](images/Screenshot3.png)
+![alt text](images/Screenshot.png)
 #### Walkthrough
 
 [Intro video 🧑‍💻 ](https://drive.google.com/file/d/1TkESQWRsz-jx64ZXZIMPd2yFzGhZoMcP/view)
