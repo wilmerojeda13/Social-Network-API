@@ -14,20 +14,20 @@ const {
 router
   .route('/')
   .get(getAllUsers)
-  .post(createUser);
+  .post(createUser)
 
 // Set up GET one, PUT, and DELETE at /:id
 router
   .route('/:id')
   .get(getUserById)
   .put(updateUser)
-  .delete(deleteUser);
+  .delete(deleteUser)
 
 // Set up Post and DELETE at /:thoughtId/reactions
 router
   .route('/:id/friends/:friendsId')
   .post(addFriend)
-  .delete(deleteFriend);
+  .delete(deleteFriend)
 
 
 module.exports = router;
