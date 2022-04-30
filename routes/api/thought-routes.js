@@ -28,6 +28,9 @@ router
   .route('/:thoughtId/reactions')
   .post(addReaction)
 
+// Set up Post and DELETE at /:thoughtId/reactions/: reaction id
+router.route('/:thoughtId/reactions/:reactionId')
+.delete(deleteReaction)
 
 module.exports = router;
 
